@@ -65,7 +65,6 @@ function submit(x) {
 
 	const requestBody = {
 		url: url,
-		filenamePattern: 'pretty',
 		vQuality: vQuality,
 		isAudioOnly: isAudioOnly,
 		aFormat: aFormat
