@@ -9,10 +9,6 @@
 	user-select: none;
 	box-sizing: border-box;
 }
-.hide-option {
-    display: none;
-}
-
 
 label {
 	font-family: monospace;
