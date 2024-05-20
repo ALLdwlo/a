@@ -30,9 +30,24 @@
 
 	<main class="container">
 		<form>
+			
+			<label for="vQuality">Select Video Quality</label>
+			<select id="vQuality">
+				<option value="144">144p</option>
+				<option value="240">240p</option>
+				<option value="360">360p</option>
+				<option value="480">480p</option>
+				<option value="720" selected>720p</option>
+				<option value="1080">1080p</option>
+			</select>
+			
 			<label for="aFormat">Select Audio Quality</label>
 			<select id="aFormat">
-			<option value="wav">WAV</option>
+				<option value="best">Best</option>
+				<option value="mp3">MP3</option>
+				<option value="ogg">OGG</option>
+				<option value="wav">WAV</option>
+				<option value="opus">Opus</option>
 			</select>
 			
 			<input type="checkbox" id="isAudioOnly">
@@ -50,6 +65,40 @@
 
 
 
+	<footer align="center">
+		<a class="contrast" data-target="about" onClick="toggleModal(event)">
+			About
+		</a>
+		<a class="contrast" data-target="developer" onClick="toggleModal(event)">
+			Developer
+		</a>
+		<a class="contrast" data-target="supported-sites" onClick="toggleModal(event)">
+			Supported Sites
+		</a>
+
+		<dialog id="about">
+			<article>
+				<header>About</header>
+				<img width="50%" src="logo.png" class="logo" />
+				<br><br>
+				Racoon is a lightweight media downloader written in HTML, CSS and JS with PicoCSS library.
+				<footer>Licensed under MIT, open-sourced at <a href="https://github.com/shailendramaurya/racoon">Github</a>.</footer>
+			</article>
+		</dialog>
+
+		<dialog id="developer">
+			<article>
+				<header>Shailendra Maurya</header>
+				<div style="display:flex">
+					<figure>
+
+						<img width="50%" src="https://avatars.githubusercontent.com/u/87139652?v=4"><br><br>
+					</figure>
+					A Passionate Web Developer & a Medico.
+				</div>
+				<footer><a href="info@shailen.onweb.im">Email</a></footer>
+			</article>
+		</dialog>
 
 	</footer>
 	<dialog id="supported-sites">
