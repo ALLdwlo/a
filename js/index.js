@@ -49,7 +49,7 @@ document.forms[0].addEventListener("submit", event => {
 });
 
 audioCheckbox.addEventListener("change", () => {
-	vQualitySelector.toggleAttribute("disabled")
+	vQualitySelector.toggleAttribute("enable")
 });
 
 
@@ -60,7 +60,7 @@ function submit(x) {
 	var url = encodeURIComponent(cURL);
 
 	var vQuality = vQualitySelector.value || 720;
-	var isAudioOnly = audioCheckbox.checked || false;
+	var isAudioOnly = audioCheckbox.checked || true;
 	var aFormat = isAudioOnly ? (document.getElementById('aFormat').value || 'best') : null;
 
 	const requestBody = {
