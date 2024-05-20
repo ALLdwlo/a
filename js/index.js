@@ -33,7 +33,7 @@ function processUrl(x) {
 	if (!url) return;
 	inputUrl.value = extractURL(url);
 	if (audio) {
-		audioCheckbox.checked = true;
+		audioCheckbox.checked = false;
 		submit(x);
 		return;
 	}
