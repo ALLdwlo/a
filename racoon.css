@@ -14,10 +14,7 @@ label {
 	font-family: monospace;
 }
 
-select,
-button {
-	font-weight: bold;
-}
+
 
 h1 {
 	display: flex;
